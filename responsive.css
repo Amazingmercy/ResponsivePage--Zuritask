@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    background-color:rgb(197, 101, 66);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 8px;
+    justify-content: center;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+.f-div {
+    margin-bottom: 50px;
+
+}
+
+
+.container div {
+    padding: 2em;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+.f-div p,
+h1 {
+    margin: 20px;
+    font-style: inherit;
+}
+
+.s-div {
+    background-color: rgb(18, 18, 168);
+    color: white;
+    grid-area: B;
+    width: 100%;
+    height: 10vh;
+    padding: 2em;
+    margin-bottom: 10px;
+    border-radius: 1em;
+    padding-bottom: 55px;
+}
+
+.t-div {
+    background-color: white;
+    grid-area: C;
+    width: 100%;
+    height: 66vh;
+    padding: 2em;
+    border-radius: 1em;
+    margin-top: 2vh;
+}
+
+input {
+    margin: 10px;
+    padding: 20px;
+    height: 5vh;
+    width: 100%;
+    border-radius: 1em;
+}
+
+#butt {
+    background-color: rgb(25, 163, 25);
+    color: white;
+    width: 100%;
+}
+@media (min-width: 600px) {
+
+    .desc-title {
+      font-size: 3.0rem;
+      line-height: 3.0rem;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    main {
+      padding: 0;
+      background-image: url(/Zuri-Task-01/bg-intro-desktop\ \(1\).png);
+    }
+  
+    .container {
+      text-align: left;
+      max-width: 1200px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+      padding: 0;
+    }
+     .f-div{
+        font-style: italic; 
+     } 
+
+  
+    .desc-title {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+      padding-right: 50px;
+    }
+  
+    .next {
+      max-width: 500px;
+    }
+  }
+
